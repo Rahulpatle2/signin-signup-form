@@ -30,7 +30,7 @@ export const Signup = (props) => {
     console.log(users)
 
     return (
-        <form onSubmit={handleSubmit(SubmitHandler)} className="w-[40%] mx-auto border-white">
+        <form onSubmit={handleSubmit(SubmitHandler)} className="lg:w-[40%] w-4/5 mx-auto mt-2 lg:mt-0 border lg:border-none p-10 lg:p-0 rounded border-white ">
             <h1 className="text-5xl font-black mb-7">Let's start the journey</h1>
             
             <input 

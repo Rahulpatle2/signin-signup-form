@@ -33,7 +33,7 @@ export const Signin = (props) => {
 
      
   return (
-    <form onSubmit={handleSubmit(submitHandler)} className="w-[40%] mx-auto border-white" >
+    <form onSubmit={handleSubmit(submitHandler)} className="lg:w-[40%] w-4/5 mx-auto mt-2 lg:mt-0 border lg:border-none p-10 lg:p-0 rounded border-white " >
         <h1 className="text-5xl font-black mb-7">Already Have an Account?</h1>
          
          <input type="text"
