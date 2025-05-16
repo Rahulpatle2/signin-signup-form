@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import { usercontext } from '../UserContext';
 
-export const Signin = (props) => {
-    const {toggler, settoggler,users,setusers} = props;
+export const Signin = () => {
+    const {toggler, settoggler,users,setusers} = useContext(usercontext);
     const {register,handleSubmit,reset} = useForm();
 
   const submitHandler = (data) =>{

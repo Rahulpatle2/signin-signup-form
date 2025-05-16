@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { toast } from 'react-toastify';
+import { usercontext } from '../UserContext';
 
-const Users = (props) => {
-    const { users, setusers } = props;
+const Users = () => {
+    const { users, setusers } = useContext(usercontext);
 
     const deleteHandler = (id) =>{
         const filteredusers = users.filter(
