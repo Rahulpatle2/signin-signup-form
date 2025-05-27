@@ -19,7 +19,7 @@ const Users = () => {
     const userlist = users.map((user) => {
         return (
             <li  key={user.id}
-                className='flex items-center justify-between bg-gray-700 rounded p-2 font-thin mb-3 border border-white w-full'>
+                className='flex lg:text-black lg:font-bold items-center justify-between bg-gray-700 rounded-3xl lg:flex-col lg:items-start p-2  mb-3 border border-white lg:p-7 lg:w-[60%] lg:bg-[url(https://i.pinimg.com/736x/33/a1/9e/33a19ea904b1212e570e167c3386bb22.jpg)] lg:bg-cover w-full'>
                 <p>
                     <span className='block text-3xl mb-1'>{user.name}</span>
                     <small className='text-lg'>{user.email}</small>

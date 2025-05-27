@@ -34,28 +34,28 @@ export const Signin = () => {
 
      
   return (
-    <form onSubmit={handleSubmit(submitHandler)} className="lg:w-[40%] w-4/5 mx-auto mt-2 lg:mt-0 border lg:border-none p-10 lg:p-0 rounded border-white " >
-        <h1 className="text-5xl font-black mb-7">Already Have an Account?</h1>
+    <form onSubmit={handleSubmit(submitHandler)} className="lg:w-[60%] w-4/5 mx-auto mt-2 lg:mt-0 border lg:border-none p-10 lg:p-5 rounded border-white " >
+        <h1 className="text-5xl lg:text-3xl font-black mb-7">Already Have an Account?</h1>
          
          <input type="text"
          {...register('name')}
          placeholder="john Doe"
-         className="block font-thin mb-3 border-b outline-0 p-2 w-full text-2xl"
+         className="block font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
          />
          <input type="email"
          {...register('email')}
          placeholder="abc123@gmail.com"
-         className="block font-thin mb-3 border-b outline-0 p-2 w-full text-2xl"
+          className="block font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
          />
          <input type="password"
          {...register('password')}
          placeholder="password"
-         className="block font-thin mb-3 border-b outline-0 p-2 w-full text-2xl"
+          className="block font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
          />
-         <button className="border border-amber-50 rounded px-3 py-1.5 hover:bg-amber-50 hover:text-gray-800 transition-all" >SignIn</button>
+         <button className=" lg:bg-blue-500 bg-yellow-500 text-white cursor-pointer rounded px-3 py-1.5 hover:bg-amber-50 hover:text-gray-800 transition-all" >SignIn</button>
          <br />
         <small>
-          Already have an account ? 
+          create a new account ? 
           <button className="text-blue-500 pl-2" type="button" onClick={ () => {settoggler(!toggler)}} >SingUp</button>
         </small>
       </form>
