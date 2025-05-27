@@ -38,19 +38,19 @@ export const Signup = () => {
                 type="text"
                 {...register('name', { required: true })} 
                 placeholder="John Doe"
-                className="block font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
+                className="block focus:text-black font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
             />
             <input 
                 type="email"
                 {...register('email', { required: true })}
                 placeholder="abc123@gmail.com"
-                className="block font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
+                className="block focus:text-black font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
             />
             <input 
                 type="password"
                 {...register('password', { required: true })} 
                 placeholder="Password"
-                className="block font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
+                className="block focus:text-black font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
             />
             <button 
                 type="submit" 

@@ -40,17 +40,17 @@ export const Signin = () => {
          <input type="text"
          {...register('name')}
          placeholder="john Doe"
-         className="block text-black font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
+         className="block focus:text-black font-thin mb-3 border rounded  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
          />
          <input type="email"
          {...register('email')}
          placeholder="abc123@gmail.com"
-          className="block font-thin mb-3 border rounded text-black  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
+          className="block font-thin mb-3 border rounded focus:text-black  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
          />
          <input type="password"
          {...register('password')}
          placeholder="password"
-          className="block font-thin mb-3 border rounded text-black  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
+          className="block font-thin mb-3 border rounded focus:text-black  p-2 w-full text-xl outline-amber-50  focus:outline-blue-500 my-1.5 focus:bg-white"
          />
          <button className=" lg:bg-blue-500 bg-yellow-500  text-white cursor-pointer rounded px-3 py-1.5 hover:bg-amber-50 hover:text-gray-800 transition-all" >SignIn</button>
          <br />
